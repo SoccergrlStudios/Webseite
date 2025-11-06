@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccergrl Studios</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Icon.png">
+    <script src="sidebar.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Soccergrl Studios Logo">
+    </header>
+
+    <main>
+        <aside id="sidebar">
+            <button onclick="closeSidebar()">&laquo;</button>
+            <h1>
+                <i>Spiele</i>
+            </h1>
+
+            <h2>
+                <a href="games/shapes2sort.html">Shapes2Sort</a>
+            </h2>
+            <h2>
+                <a href="games/mosaics.html">Mosaics</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="apps.html">Apps</a>
+            </h1>
+
+            <h2>
+                <a href="apps/hausaufgabenheft.html">Hausaufgabenheft</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="minecraftplugins.html">Minecraft Plugins</a>
+            </h1>
+
+            <h2>
+                <a href="minecraftplugins/warp.html">Warp</a>
+            </h2>
+            <h2>
+                <a href="minecraftplugins/custommessages.html">Custom Messages</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="contact.html">Kontakt</a>
+            </h1>
+        </aside>
+
+        <article id="article">
+            <button id="buttonOpen" onclick="openSidebar()">&raquo;</button>
+            <div class="pathSeparator">SocStu:/</div>
+            <a href="index.html" class="Button" id="homepage">Home</a>
+            <div class="pathSeparator">/</div>
+            <div class="pathEnd">Spiele</div>
+            <br>
+
+            <h1>Spiele</h1>
+
+            Auf dieser Seite gibt's eine Übersicht über die Spiele, die schon veröffentlicht sind, und auch über die, an denen ich noch arbeite.
+            Außerdem gibts noch ne kleine Liste an Spielen, die ich noch entwickeln möchte.
+            Wann ich diese jedoch abarbeite, ist sehr unklar, da ich mich kenne und mir vorher bestimmt noch etliche andere Ideen einfallen, die dort nie stehen werden, aber trotzdem schneller fertig sind.
+
+            <h2>Veröffentlichte Spiele</h2>
+
+            <div class="PublishedRow">
+                <div class="PublishedColumn">
+                    <a href="games/shapes2sort.html">
+                        <img src="icons/Shapes2SortFeature.png" alt="Shapes2Sort" class="Feature"> <br>
+                    </a>
+                    <a href="games/shapes2sort.html">Shapes2Sort</a> <br>
+                    <a href="https://play.google.com/store/apps/details?id=com.SoccergrlStudios.Shapes2Sort">Google Play</a>
+                </div>
+            </div>
+
+            <h2>Spiele in Arbeit</h2>
+
+            <div class="PublishedRow">
+                <div class="PublishedColumn">
+                    <a href="games/mosaics.html">
+                        <img src="icons/MosaicsWip.png" alt="Mosaics" class="Feature"> <br>
+                    </a>
+                    <a href="games/mosaics.html">Mosaics</a>
+                </div>
+            </div>
+
+            <h2>Geplante Spiele</h2>
+
+            <ul>
+                <li>Schafkopf</li>
+                <li>Schach mit Random AI</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <a href="datenschutz.html">Datenschutz</a>
+
+        <a href="https://www.instagram.com/soccergrlstudios?igsh=MWR5Mmkzd2hibWRibg==" class="SocialMedia">Instagram</a>
+    </footer>
+
+    <script>
+        document.getElementById("buttonOpen").style.height = document.getElementById("homepage").offsetHeight + "px";
+    </script>
+</body>
+</html>

@@ -3,140 +3,270 @@
     color: #ffffff;
 
     font-family: "Arial", serif;
+    text-align: justify;
+
+    font-size: 1em;
 }
 
 header{
     text-align: center;
 
-    background-color: black;
+    background-color: #000000;
 
-    box-shadow: 0 0 13px 5px rgba(47, 92, 255, 0.75);
+    box-shadow: 0 0 1em 0.5em rgba(47, 92, 255, 0.75);
 
-    border-radius: 5px;
+    border-radius: 0.5em;
 
-    margin-bottom: 10px;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
 
-    padding: 10px;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 header img{
-    height: 100px;
+    display: block;
 
-    align-content: center;
+    height: 6em;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    font-size: 1em;
+
+    background-color: #000417;
+    color: rgba(156, 180, 255, 0.75);
+
+    box-shadow: 0.1em 0.1em 0.1em rgba(35, 68, 195, 0.75);
+
+    border: solid 0.2em rgba(35, 68, 195, 0.75);
+
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+
+button:hover{
+    background-color: rgba(35, 68, 195, 0.75);
+
+    box-shadow: 0 0 0 rgba(35, 68, 195, 0.75);
+
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    margin-right: -0.1em;
 }
 
 aside{
-    float: left;
-
-    width: 170px;
-
-    box-shadow: 0 0 13px 5px rgba(47, 92, 255, 0.75);
-
-    border-radius: 5px;
+    display: none;
 
     background-color: #000000;
 
-    margin-right: 20px;
+    box-shadow: 0 0 1em 0.5em rgba(47, 92, 255, 0.75);
 
-    padding: 0 15px 10px;
+    border-radius: 0.5em;
+
+    margin-bottom: 0.7em;
+
+    padding-bottom: 0.5em;
+
+    position: absolute;
+}
+
+aside button{
+    float: right;
+
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+
+aside button:hover{
+    margin-top: 0.6em;
+    margin-right: 0.4em;
 }
 
 aside h1{
-    margin-bottom: 5px;
+    font-size: 1.5em;
 
-    text-decoration: none;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+aside h2{
+    font-size: 1.2em;
+
+    margin-right: 0.5em;
+    margin-left: 0.7em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+aside h2 + h1{
+    margin-top: 1em;
+}
+
+aside h1 + h1{
+    margin-top: 1em;
 }
 
 aside i{
-    font-size: 20px;
+    color: rgba(156, 180, 255, 0.75);
+
     font-style: normal;
     text-decoration: underline;
-
-    color: rgba(156, 180, 255, 0.75);
 }
 
-article{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+article button{
+    float: left;
 
-    text-align: justify;
-	
-	margin-left: 10px;
+    margin-right: 1.5em;
+}
+
+article button:hover{
+
+    margin-left: 0.1em;
+    margin-bottom: -0.1em;
+    margin-right: 1.4em;
 }
 
 article h1{
-    margin-top: 0;
-
-    text-decoration: underline;
-
-    font-size: 30px
+    margin-bottom: 0.3em;
 }
 
 article h2{
-    font-size: 20px;
-
-    text-decoration: underline;
-
-    margin-top: 25px;
+    margin-top: 0.8em;
+    margin-bottom: 0.2em;
 }
 
 article h3{
-    font-size: 19px;
-
-    text-decoration: underline;
-
-    margin-top: 10px;
-    margin-bottom: 0;
-    margin-left: 5px;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
 }
 
 article h4{
-    font-size: 18px;
-
-    text-decoration: underline;
-
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 0.4em;
+    margin-bottom: 0.3em;
 }
 
-article h6{
-    margin-bottom: 0;
-    margin-top: 10px;
+article div.pathSeparator{
+    float: left;
 
-    font-size: 18px;
+    color: rgba(156, 180, 255, 0.75);
+
+    font-weight: bold;
+
+    margin-top: 0.5em;
+    margin-right: 0.3em;
+}
+
+article div.pathEnd{
+    float: left;
+
+    background-color: rgba(35, 68, 195, 0.75);
+    color: rgba(156, 180, 255, 0.75);
+
+    box-shadow: 0 0 0 rgba(35, 68, 195, 0.75);
+
+    border: solid 0.2em rgba(35, 68, 195, 0.75);
+
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    margin-right: 0.4em;
+
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+
+article div.PublishedRow{
+    width: 100%;
+}
+
+article div.PublishedRow:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article div.PublishedColumn{
+    float: left;
+
+    text-align: center;
+
+    margin-right: 1em;
+}
+
+article img{
+    box-shadow: 0.1em 0.1em 0.3em rgba(35, 68, 195, 0.75);
+
+    border: solid 0.1em rgba(35, 68, 195, 0.75);
+
+    border-radius: 0.5em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    margin-right: 0.7em;
+}
+
+article img.Normal{
+    height: 15em;
+}
+
+article img.Breit{
+    width: 100%;
+}
+
+article img.Icon{
+    height: 5em;
+
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+article img.Feature{
+    width: 10em;
+
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+article video{
+    height: 15em;
+
+    box-shadow: 0.1em 0.1em 0.3em rgba(35, 68, 195, 0.75);
+
+    border: solid 0.1em rgba(35, 68, 195, 0.75);
+
+    border-radius: 0.5em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    margin-right: 0.7em;
 }
 
 article ul{
     margin-top: 0;
-}
-
-article img{
-    box-shadow: 2px 2px 5px rgba(35, 68, 195, 0.75);
-
-    border: solid 2px rgba(35, 68, 195, 0.75);
-
-    border-radius: 5px;
-}
-
-article video{
-    box-shadow: 2px 2px 5px rgba(35, 68, 195, 0.75);
-
-    border: solid 2px rgba(35, 68, 195, 0.75);
-
-    border-radius: 5px;
+    margin-bottom: 0.4em;
 }
 
 article table{
-    margin-top: 10px;
-
     border-collapse: collapse;
 
-    box-shadow: 2px 2px 5px rgba(35, 68, 195, 0.75);
+    box-shadow: 0.1em 0.1em 0.3em rgba(35, 68, 195, 0.75);
 
-    border: solid 2px rgba(35, 68, 195, 0.75);
+    border: solid 0.1em rgba(35, 68, 195, 0.75);
 
-    border-radius: 5px;
+    border-radius: 0.5em;
 }
 
 article table tr:hover{
@@ -144,13 +274,13 @@ article table tr:hover{
 }
 
 article table td{
-    border: solid 2px rgba(35, 68, 195, 0.75);
+    border: solid 0.1em rgba(35, 68, 195, 0.75);
 
-    padding: 2px 8px 2px 5px;
+    padding: 0.1em 0.5em 0.1em 0.3em;
 }
 
 article table td.emptyRow{
-    height: 1px;
+    height: 0.05em;
     padding: 0;
     margin: 0;
 
@@ -158,148 +288,88 @@ article table td.emptyRow{
 }
 
 article table th{
-    border: solid 2px rgba(35, 68, 195, 0.75);
+    border: solid 0.1em rgba(35, 68, 195, 0.75);
 
-    padding: 5px 8px 5px 5px;
-}
-
-img.Normal{
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-
-    height: 260px;
-}
-
-img.Breit{
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-
-    width: 1000px;
-}
-
-video{
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-
-    height: 260px;
+    padding: 0.3em 0.5em 0.3em 0.3em;
 }
 
 footer{
-    font-family: "Arial", serif;
-
-    box-shadow: 0 0 13px 5px rgba(47, 92, 255, 0.75);
-
-    border-radius: 5px;
-
     background-color: #000000;
 
-    margin-top: 10px;
+    box-shadow: 0 0 1em 0.5em rgba(47, 92, 255, 0.75);
 
-    padding: 10px;
+    border-radius: 0.5em;
+
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+
+    padding: 0.5em;
 }
 
 footer i{
-    font-size: 15px;
-
     font-style: normal;
     text-decoration: underline;
-
-    margin-right: 30px;
 
     color: rgba(156, 180, 255, 0.75);
 }
 
 a{
+    font-size: 1em;
     text-decoration: none;
-    font-size: 20px;
-    color: white;
+
+    color: rgba(156, 180, 255, 0.75);
 }
 
 a:hover{
     font-style: italic;
 }
 
-aside a{
-    color: rgba(156, 180, 255, 0.75);
-}
-
-article a{
-    font-size: 15px;
-}
-
-article a.Datenschutz{
-    font-size: 16px;
-
-    margin-right: 20px;
-}
-
-a.Download{
-    float: right;
-
-    padding: 5px;
-
-    box-shadow: 2px 2px 2px rgba(35, 68, 195, 0.75);
-
-    border: solid 3px rgba(35, 68, 195, 0.75);
-
-    margin-left: 10px;
-}
-
-a.Download:hover{
-    font-style: normal;
-
-    background-color: rgba(35, 68, 195, 0.75);
-
-    box-shadow: 0 0 0 rgba(35, 68, 195, 0.75);
-
-    margin-top: 2px;
-    margin-right: -2px;
-    margin-left: 12px;
-}
-
-a.Archiv{
+article a.Button{
     float: left;
 
-    padding: 5px;
+    background-color: #000417;
+    color: rgba(156, 180, 255, 0.75);
 
-    margin-right: 10px;
-    margin-bottom: 10px;
+    box-shadow: 0.1em 0.1em 0.1em rgba(35, 68, 195, 0.75);
 
-    box-shadow: 2px 2px 2px rgba(35, 68, 195, 0.75);
+    border: solid 0.2em rgba(35, 68, 195, 0.75);
 
-    border: solid 3px rgba(35, 68, 195, 0.75);
+    margin-right: 0.5em;
+
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
 }
 
-a.Archiv:hover{
+article a.Button:hover{
     font-style: normal;
 
     background-color: rgba(35, 68, 195, 0.75);
 
     box-shadow: 0 0 0 rgba(35, 68, 195, 0.75);
 
-    margin-top: 2px;
-    margin-left: 2px;
-    margin-right: 8px;
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    margin-right: 0.4em;
+}
+
+article a.Download{
+    float: right;
+
+    margin-right: 0;
+    margin-left: 0.5em;
+}
+
+article a.Download:hover{
+    margin-right: -0.1em;
+    margin-left: 0.6em;
 }
 
 footer a{
-    font-size: 15px;
-
-    color: rgba(156, 180, 255, 0.75);
-
-    margin-right: 30px;
+    font-size: 1em;
 }
 
 footer a.SocialMedia{
     float: right;
-
-    font-size: 15px;
-
-    color: rgba(156, 180, 255, 0.75);
-
-    margin-left: 30px;
-    margin-right: 0;
 }

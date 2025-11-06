@@ -1,23 +1,118 @@
 ﻿<!DOCTYPE html>
 <html lang="de">
 <head>
-	<meta charset="UTF-8">
-	<title>Soccergrl Studios</title>
+    <meta charset="UTF-8">
+    <title>Soccergrl Studios</title>
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="workInProgress.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Icon.png">
+    <script src="sidebar.js"></script>
 </head>
+
 <body>
-	<header>
-		<img src="Logo.png" alt="Soccergrl Studios Logo">
-	</header>
+    <header>
+        <img src="Logo.png" alt="Soccergrl Studios Logo">
+    </header>
 
-	<main>
-		Work In Progress
-	</main>
+    <main>
+        <aside id="sidebar">
+            <button onclick="closeSidebar()">&laquo;</button>
 
-	<footer>
-		<a href="footer/datenschutz.html">Datenschutz</a>
-	</footer>
+            <h1>
+                <a href="games.html">Spiele</a>
+            </h1>
+
+            <h2>
+                <a href="games/shapes2sort.html">Shapes2Sort</a>
+            </h2>
+            <h2>
+                <a href="games/mosaics.html">Mosaics</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="apps.html">Apps</a>
+            </h1>
+
+            <h2>
+                <a href="apps/hausaufgabenheft.html">Hausaufgabenheft</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="minecraftplugins.html">Minecraft Plugins</a>
+            </h1>
+
+            <h2>
+                <a href="minecraftplugins/warp.html">Warp</a>
+            </h2>
+            <h2>
+                <a href="minecraftplugins/custommessages.html">Custom Messages</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="contact.html">Kontakt</a>
+            </h1>
+        </aside>
+
+        <article id="article">
+            <button id="buttonOpen" onclick="openSidebar()">&raquo;</button>
+            <div class="pathSeparator">SocStu:/</div>
+            <div class="pathEnd">Home</div>
+            <br>
+
+            <h1>Veröffentlichungen</h1>
+
+            <div class="PublishedRow">
+                <div class="PublishedColumn">
+                    <a href="https://play.google.com/store/apps/details?id=com.SoccergrlStudios.Shapes2Sort">
+                        <img src="icons/Shapes2Sort.png" alt="Shapes2Sort" class="Icon"> <br>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.SoccergrlStudios.Shapes2Sort">Shapes2Sort</a><br>
+                    <a href="games/shapes2sort.html">Mehr Infos</a>
+                </div>
+            </div>
+
+            <h1>Über mich</h1>
+
+            Herzlich Willkommen auf meiner Webseite.
+            Ich weiß, sie ist nicht perfekt, aber ich arbeite ja auch noch daran.
+            Was es so über mich zu sagen gibt?
+            Nun, ich komme aus Bayern, und wenn du dir den Text nicht gerade übersetzen lässt, weißt du wahrscheinlich, dass das im Süden Deutschlands liegt.
+            Meine große Leidenschaft ist das Programmieren, aber das wusstest du wahrscheinlich schon, da ich nicht weiß, wie du sonst überhaupt auf diese Webseite gestoßen bist.
+            Da Programmieren aber ein sehr umfangreicher Begriff ist, sollte ich das ganze vielleicht etwas konkretisieren.
+            <br>
+            Hauptsächlich interessiere ich mich für die Spieleentwicklung.
+            Da ich alleine aber kaum ein Triple A Game mit etlichen Spielstunden auf die Reihe kriege, liegt mein Fokus eher auf Handygames.
+            Und nein, nicht die Art von Handy Games, die dich mit Werbung zu spamt.
+            Ich mach das ganze als Hobby, und auch wenn Profit schön klingt, steht mir der Spielspaß dann doch im Vordergrund.
+            <br>
+            Neben der Entwicklung fürs Handy hat sich auch noch eine andere Richtung ergeben.
+            Denn auch meine Freunde und ich sind von dieser jährlichen 2 Wochen Minecraft Phase betroffen.
+            Und was bietet sich da besser an, als die Plugins für den Server selbst zu schreiben?
+            <br>
+            Auf Dauer wär es aber langweilig, wenn ich mich nur mit Videospielen beschäftige.
+            Daher erstelle ich auch gerne mal Handy-Apps.
+            Klingt jetzt zwar nicht so wahnsinnig anders als Handygames, was für die Entwicklung zum Teil auch zutrifft, aber thematisch gibt es dann doch einen großen Unterschied.
+            <br>
+            So, jetzt hab ich ne ganze Menge Stuff erzählt, obwohl du wahrscheinlich einfach nur wissen wolltest, was auf der Seite hier so ab geht.
+            Tja, damit musst du hier rechnen, denn schließlich bin ich keine KI und mach das ganze noch selber.
+            Von Hand.
+            Um die Frage jetzt aber trotzdem zu beantworten:
+            Hier findest du einfach genauere Infos über die Projekte, an denen ich gerade so arbeite.
+            Quasi so ein kleiner Einblick hinter die Kulissen.
+            Vielleicht war es also doch ganz sinnvoll, sich das hier durchzulesen, um den wilden Mix an Projekten zu verstehen.
+        </article>
+    </main>
+
+    <footer>
+        <a href="datenschutz.html">Datenschutz</a>
+
+        <a href="https://www.instagram.com/soccergrlstudios?igsh=MWR5Mmkzd2hibWRibg==" class="SocialMedia">Instagram</a>
+    </footer>
+
+
 </body>
+
 </html>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccergrl Studios</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../Icon.png">
+    <script src="../sidebar.js"></script>
+</head>
+<body>
+    <header>
+        <img src="../Logo.png" alt="Soccergrl Studios Logo">
+    </header>
+
+    <main>
+        <aside id="sidebar">
+            <button onclick="closeSidebar()">&laquo;</button>
+            <h1>
+                <a href="../games.html">Spiele</a>
+            </h1>
+
+            <h2>
+                <i>Shapes2Sort</i>
+            </h2>
+            <h2>
+                <a href="mosaics.html">Mosaics</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="../apps.html">Apps</a>
+            </h1>
+
+            <h2>
+                <a href="../apps/hausaufgabenheft.html">Hausaufgabenheft</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="../minecraftplugins.html">Minecraft Plugins</a>
+            </h1>
+
+            <h2>
+                <a href="../minecraftplugins/warp.html">Warp</a>
+            </h2>
+            <h2>
+                <a href="../minecraftplugins/custommessages.html">Custom Messages</a>
+            </h2>
+
+            <br>
+            <h1>
+                <a href="../contact.html">Kontakt</a>
+            </h1>
+        </aside>
+
+        <article id="article">
+            <button id="buttonOpen" onclick="openSidebar()">&raquo;</button>
+            <div class="pathSeparator">SocStu:/</div>
+            <a href="../index.html" class="Button" id="homepage">Home</a>
+            <div class="pathSeparator">/</div>
+            <a href="../games.html" class="Button">Spiele</a>
+            <div class="pathSeparator">/</div>
+            <div class="pathEnd">Shapes2Sort</div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.SoccergrlStudios.Shapes2Sort" class="Download Button">Download on Google Play</a>
+            <br>
+
+            <h1>Shapes2Sort</h1>
+
+            Work In Progress
+        </article>
+    </main>
+
+    <footer>
+        <a href="../datenschutz.html">Datenschutz</a>
+
+        <a href="https://www.instagram.com/soccergrlstudios?igsh=MWR5Mmkzd2hibWRibg==" class="SocialMedia">Instagram</a>
+    </footer>
+
+    <script>
+        document.getElementById("buttonOpen").style.height = document.getElementById("homepage").offsetHeight + "px";
+    </script>
+</body>
+</html>
