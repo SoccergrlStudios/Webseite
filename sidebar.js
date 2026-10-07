@@ -8,7 +8,9 @@ function openSidebar() {
         document.getElementById("article").style.height = document.getElementById("sidebar").offsetHeight + "px";
     }
 
-    document.getElementById("buttonOpen").style.marginTop = "0.5em";
+    // Move the open Button for the Sidebar, so it doesn't shine through
+    document.getElementById("buttonOpen").style.marginLeft = "0.5em";
+    document.getElementById("buttonOpen").style.marginRight = "0.5em";
 }
 
 function closeSidebar() {
@@ -18,5 +20,7 @@ function closeSidebar() {
         document.getElementById("article").style.height = oldArticleHeight + "px";
     }
 
-    document.getElementById("buttonOpen").style.marginTop = "";
+    // Move the open Button for the Sidebar back to the original Position
+    document.getElementById("buttonOpen").style.marginLeft = "";
+    document.getElementById("buttonOpen").style.marginRight = "";
 }

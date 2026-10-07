@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Soccergrl Studios</title>
 
+	<base href="../">
+
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" href="Icon.png">
 	<script src="sidebar.js"></script>
@@ -17,51 +19,65 @@
 	<main>
 		<aside id="sidebar">
 			<button onclick="closeSidebar()">&laquo;</button>
+
 			<h1>
-				<a href="games.html">Spiele</a>
+				<a href="games">Spiele</a>
 			</h1>
 
 			<h2>
-				<a href="games/shapes2sort.html">Shapes2Sort</a>
+				<a href="games/shapes2Sort">Shapes2Sort</a>
 			</h2>
 			<h2>
-				<a href="games/mosaics.html">Mosaics</a>
+				<a href="games/mosaics">Mosaics</a>
+			</h2>
+			<h2>
+				<a href="games/floorian_man">Floorian Man</a>
+			</h2>
+			<h2>
+				<a href="games/emergency_center">Emergency Center</a>
+			</h2>
+			<h2>
+				<a href="games/oktoberfest_crisis">Octoberfest Crisis</a>
 			</h2>
 
-			<br>
 			<h1>
-				<a href="apps.html">Apps</a>
+				<a href="apps">Apps</a>
 			</h1>
 
 			<h2>
-				<a href="apps/hausaufgabenheft.html">Hausaufgabenheft</a>
+				<a href="apps/hausaufgabenheft">Hausaufgabenheft</a>
 			</h2>
 
-			<br>
 			<h1>
 				<i>Minecraft Plugins</i>
 			</h1>
 
 			<h2>
-				<a href="minecraftplugins/warp.html">Warp</a>
+				<a href="minecraft_plugins/warp">Warp</a>
 			</h2>
 			<h2>
-				<a href="minecraftplugins/custommessages.html">Custom Messages</a>
+				<a href="minecraft_plugins/custom_messages">Custom Messages</a>
 			</h2>
 
-			<br>
 			<h1>
-				<a href="contact.html">Kontakt</a>
+				<a href="download_archive">Download Archiv</a>
+			</h1>
+
+			<h1>
+				<a href="contact">Kontakt</a>
 			</h1>
 		</aside>
 
 		<article id="article">
-			<button id="buttonOpen" onclick="openSidebar()">&raquo;</button>
-			<div class="pathSeparator">SocStu:/</div>
-			<a href="index.html" class ="Button" id="homepage">Home</a>
-			<div class="pathSeparator">/</div>
-			<div class="pathEnd">Minecraft Plugins</div>
-			<br>
+			<div class="Path" id="path">
+				<div class="PathBar" id="path1">
+					<button id="buttonOpen" onclick="openSidebar()">&raquo;</button>
+					<div class="pathSeparator">SocStu:/</div>
+					<a href="" class ="Button" id="homepage">Home</a>
+					<div class="pathSeparator">/</div>
+					<div class="pathEnd">Minecraft Plugins</div>
+				</div>
+			</div>
 
             <h1>Minecraft Plugins</h1>
 
@@ -85,17 +101,17 @@
 
             <div class="PublishedRow">
                 <div class="PublishedColumn">
-                    <a href="minecraftplugins/warp.html">
-                        <img src="icons/TODOFeature.png" alt="Warp" class="Feature"> <br>
+                    <a href="minecraft_plugins/warp">
+                        <img src="icons/TODOFeature.png" alt="Warp" class="Icon"> <br>
                     </a>
-                    <a href="minecraftplugins/warp.html">Warp</a>
+                    <a href="minecraft_plugins/warp">Warp</a>
                 </div>
 
                 <div class="PublishedColumn">
-                    <a href="minecraftplugins/custommessages.html">
-                        <img src="icons/TODOFeature.png" alt="Custom Messages" class="Feature"> <br>
+                    <a href="minecraft_plugins/custom_messages">
+                        <img src="icons/TODOFeature.png" alt="Custom Messages" class="Icon"> <br>
                     </a>
-                    <a href="minecraftplugins/custommessages.html">Custom Messages</a>
+                    <a href="minecraft_plugins/custom_messages">Custom Messages</a>
                 </div>
             </div>
 
@@ -109,7 +125,7 @@
 	</main>
 
 	<footer>
-		<a href="datenschutz.html">Datenschutz</a>
+		<a href="datenschutz">Datenschutz</a>
 
 		<a href="https://www.instagram.com/soccergrlstudios?igsh=MWR5Mmkzd2hibWRibg==" class="SocialMedia">Instagram</a>
 	</footer>
