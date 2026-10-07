@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccergrl Studios</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/png" href="../../Icon.png">
+    <script src="../../sidebar.js"></script>
+</head>
+<body>
+    <header>
+        <img src="../../Logo.png" alt="Soccergrl Studios Logo">
+    </header>
+
+    <main>
+        <aside id="sidebar">
+            <button onclick="closeSidebar()">&laquo;</button>
+            <h1>
+                <a href="../../games">Spiele</a>
+            </h1>
+
+            <h2>
+                <a href="../shapes2Sort">Shapes2Sort</a>
+            </h2>
+            <h2>
+                <i>Mosaics</i>
+            </h2>
+			<h2>
+				<a href="../floorian_man">Floorian Man</a>
+			</h2>
+			<h2>
+				<a href="../emergency_center">Emergency Center</a>
+			</h2>
+			<h2>
+				<a href="../oktoberfest_crisis">Oktoberfest Crisis</a>
+			</h2>
+
+            <h1>
+                <a href="../../apps">Apps</a>
+            </h1>
+
+            <h2>
+                <a href="../../apps/hausaufgabenheft">Hausaufgabenheft</a>
+            </h2>
+
+            <h1>
+                <a href="../../minecraft_plugins">Minecraft Plugins</a>
+            </h1>
+
+            <h2>
+                <a href="../../minecraft_plugins/warp">Warp</a>
+            </h2>
+            <h2>
+                <a href="../../minecraft_plugins/custom_messages">Custom Messages</a>
+            </h2>
+
+            <h1>
+                <a href="../../download_archive">Download Archiv</a>
+            </h1>
+
+            <h1>
+                <a href="../../contact">Kontakt</a>
+            </h1>
+        </aside>
+
+        <article id="article">
+			<div class="Path" id="path">
+				<div class="PathBar" id="path1">
+					<button id="buttonOpen" onclick="openSidebar()">&raquo;</button>
+					<div class="pathSeparator">SocStu:/</div>
+					<a href="../../" class="Button" id="homepage">Home</a>
+					<div class="pathSeparator">/</div>
+					<a href="../../games" class="Button">Spiele</a>
+					<div class="pathSeparator">/</div>
+					<div class="pathEnd">Mosaics</div>
+				</div>
+			</div>
+
+            <h1>Mosaics</h1>
+
+            Work in Progress
+        </article>
+    </main>
+
+    <footer>
+        <a href="../../datenschutz">Datenschutz</a>
+
+        <a href="https://www.instagram.com/soccergrlstudios?igsh=MWR5Mmkzd2hibWRibg==" class="SocialMedia">Instagram</a>
+    </footer>
+
+    <script>
+        document.getElementById("buttonOpen").style.height = document.getElementById("homepage").offsetHeight + "px";
+    </script>
+</body>
+</html>

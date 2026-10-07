@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccergrl Studios</title>
+
+	<base href="../../">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Icon.png">
+    <script src="sidebar.js"></script>
+	<script src="pathbar.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Soccergrl Studios Logo">
+    </header>
+
+    <main>
+        <aside id="sidebar">
+            <button onclick="closeSidebar()">&laquo;</button>
+
+			<h1>
+				<a href="games">Spiele</a>
+			</h1>
+
+			<h2>
+				<i>Shapes2Sort</i>
+			</h2>
+			<h2>
+				<a href="games/mosaics">Mosaics</a>
+			</h2>
+			<h2>
+				<a href="games/floorian_man">Floorian Man</a>
+			</h2>
+			<h2>
+				<a href="games/emergency_center">Emergency Center</a>
+			</h2>
+			<h2>
+				<a href="games/oktoberfest_crisis">Octoberfest Crisis</a>
+			</h2>
+
+			<h1>
+				<a href="apps">Apps</a>
+			</h1>
+
+			<h2>
+				<a href="apps/hausaufgabenheft">Hausaufgabenheft</a>
+			</h2>
+
+			<h1>
+				<a href="minecraft_plugins">Minecraft Plugins</a>
+			</h1>
+
+			<h2>
+				<a href="minecraft_plugins/warp">Warp</a>
+			</h2>
+			<h2>
+				<a href="minecraft_plugins/custom_messages">Custom Messages</a>
+			</h2>
+
+			<h1>
+				<a href="download_archive">Download Archiv</a>
+			</h1>
+
+			<h1>
+				<a href="contact">Kontakt</a>
+			</h1>
+        </aside>
+
+        <article id="article">
+			<div class="Path" id="path">
+				<div class="PathBar" id="path1">
+					<button id="buttonOpen" onclick="openSidebar()">&raquo;</button>
+					<div class="pathSeparator">SocStu:/</div>
+					<a href="" class="Button" id="homepage">Home</a>
+					<div class="pathSeparator">/</div>
+					<a href="games" class="Button">Spiele</a>
+					<div class="pathSeparator">/</div>
+					<div class="pathEnd">Shapes2Sort</div>
+				</div>
+
+				<div class="DownloadBar" id="path2">
+					<a href="https://play.google.com/store/apps/details?id=com.SoccergrlStudios.Shapes2Sort" class="Button">Download on Google Play</a>
+					<a href="games/shapes2sort/7_v1.0.3.apk" download="Shapes2Sort_v1.0.3.apk" class="Button">Download Android Apk (v1.0.3)</a>
+				</div>
+			</div>
+
+            <h1>Shapes2Sort</h1>
+
+			So, jetzt sitz ich hier, nachdem ich mir etliche Unity Tutorials angekuckt habe und immer noch nicht weiß, wie zur Hölle man jetzt wirklich ein Spiel erstellt.
+			Jap, Shapes2Sort ist mein allererstes Spiel.
+			Mit irgendwas muss man ja mal anfangen.
+			Aber bevor ich mir für die Umsetzung den Kopf zerbrech, brauch ich erstmal ne Idee, die ich überhaupt umsetzen will.
+
+            <h2>Das Finden einer Idee</h2>
+
+			Ich brauch irgendwas ganz simples.
+			Irgendwas, wo ich am besten keine Level designen muss.
+			Also ein Spiel, mit quasi Endlos-Modus, in dem man dann Game Over gehen kann.
+			Am besten wirds dann noch schwieriger mit der Zeit.
+			Quasi so wie Subway Surfers, nur halt mit anderem Game Play .. und ohne Shop.
+			<br>
+			Ok, das ist zumindest mal ein Grundgerüst, aber wie genau soll denn jetzt das Spiel aussehen?
+			Vielleicht ja irgendwas mit verschiedenen Formen.
+			So wie in dem Kinderspielzeug, bei dem man Holzklötze durch Löcher schieben muss.
+			Ähh, ok, dieses Insta-Video mit "the Square Hole" hab ich definitiv schon zu oft gesehen.
+			Aber damit kann ich arbeiten.
+			Wenns jetzt nicht nur Formen, sondern auch noch Farben gibt .. oh ja, ich hab ne Idee.
+			<br><br>
+			Man bekommt eine Auswahl an Blöcken, in verschiedenen Farben.
+			Außerdem gibt es zu jeder Form ein Loch, das farbig umrandet ist.
+			Um einen Block durch ein Loch zu schieben, müssen dann Form und Farbe übereinstimmen.
+			Passt beides, bekommt man einen Punkt, und das Loch wechselt seine Farbe.
+			Stimmt eines der beiden nicht überein, verliert man ein Leben.
+			Versucht man zu lange keinen Block zuzuordnen, verliert man auch ein Leben.
+			Und für noch mehr Schwierigkeit wechseln alle Löcher zusätzlich nach einer gewissen Zeit ihre Farbe.
+			<br><br>
+			Ok, stop.
+			Das reicht fürs Erste an Features.
+			Zeit, endlich anzufangen.
+			Aber womit?
+
+			<h2>Lasst mich farbige Formen malen</h2>
+
+			Sollte man mit Grafiken anfangen?
+			Ich glaube nicht.
+			Hab ich es trotzdem gemacht?
+			Ja!
+			4 Formen in 14 Farben.
+			Jedes Mal als Block und als Loch.
+			Und bevor hier jemand Hoffnung hat, dass das tatsächlich dreidimensionale Blöcke und Löcher werden, sorry.
+			Ich habe keine Ahnung von 3D-Modellierung.
+			Ich mach ganz einfache 2D Grafiken.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image1.png" alt="Grafiken der Blöcke und Löcher" class="Wide">
+			</div>
+
+			Tada!
+			Sind sie nicht wunderschön?
+			<br>
+			So, genug von meiner künstlerischen Höchstleistung.
+			Zeit, endlich zu programmieren.
+
+			<h2>Welcher Block soll es sein?</h2>
+
+			Yay, endlich gehts hier mal ans Programmieren!
+			Und womit fang ich jetzt genau an?
+			Nun, um überhaupt was spielen zu können, brauch ich Blöcke und Löcher auf dem Screen.
+			Bei den Löchern gibt es für jede Form eines in einer zufälligen Farbe.
+			Bei den Blöcken sind es so viele wie sinnvoll auf den Bildschirm passen in zufälliger Form und Farbe.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image2.png" alt="Ein erster Screen" class="Normal">
+			</div>
+
+			Das sieht doch schon mal gar nicht so schlecht aus.
+			Aber irgendwie sind das noch ein paar Blöcke zu wenig ...
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image3.png" alt="Mehr Blöcke" class="Normal">
+			</div>
+
+			Schon besser!
+			Auf gehts ans Gameplay!
+
+			<h2>Das Runde muss ins Eckige! Ne warte, das war ja beim Fussball</h2>
+
+			Ich hab Blöcke, ich hab Löcher, also alles, was man für gutes Gameplay braucht.
+			Jetzt muss man nur noch die Blöcke in die Löcher ziehen können.
+			Äh, stop!
+			Rumziehen auf dem Screen wirkt mir jetzt doch irgendwie zu kompliziert.
+			Vielleicht also doch einfach so, dass man erst den Block und dann das Loch anklicken muss?
+			Ja, das klingt simpler.
+			Das krieg ich hin.
+			<br><br>
+			Als Nächstes nur noch überprüfen, ob Farbe und Form übereinstimmen und zack, eine Scoreanzeige!
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image4.png" alt="Score Anzeige" class="Normal">
+			</div>
+
+			Ich weiß, sieht nicht schön aus, aber das ist ja fürs Erste egal.
+			Jetzt braucht das Ganze noch ne Lebensanzeige.
+			Falsche Versuche müssen schließlich auch bestraft werden.
+			Und dann heißt es ganz schnell: GAME OVER!
+
+			<h2>Und wo bleibt jetzt die Challenge?</h2>
+
+			Bisher ist das Ganze ja noch recht einfach.
+			Man wird überhaupt nicht gezwungen, irgendwas zu tun.
+			Voll langweilig!
+			Das muss ich ändern!
+			Aber wie?
+			Nun, wie am Anfang schon angedeutet, es gibt zwei Timer.
+			<br>
+			Der Erste zählt, wie lange man schon nicht mehr versucht hat, einen Block zuzuordnen.
+			Läuft dieser ab, verliert man ein Leben.
+			Also endlich Schluss mit nix tun!
+			Die letzten 3 Sekunden werden außerdem angezeigt.
+			Ich will ja schließlich nicht einfach ohne offensichtlichen Grund Leben abziehen.
+			Das wär zu asozial.
+			Hat auch den netten Nebeneffekt, dass man nochmal so richtig Panik bekommt, wenn man einfach nichts Passendes sieht.
+			Herrlich!
+			Versucht man einen Block zuzuordnen, egal ob erfolgreich oder nicht, wird der Timer zurückgesetzt.
+			<br>
+			Nun zum zweiten Timer.
+			Dieser lässt die 4 Löcher immer wieder ihre Farbe wechseln.
+			Anfangs war das gar nicht als zu extreme Schwierigkeit angedacht, sondern mehr als Hilfestellung, wenn man eine Weile einfach keinen passenden Block sieht.
+			Ja, ich wollte tatsächlich ein bisschen nett sein.
+			Man möchte es kaum glauben.
+			Daher wird dieser auch nicht auf dem Bildschirm angezeigt.
+			Ok, im Nachhinein betrachtet vielleicht doch nicht ganz so nett.
+			Das Ganze wurde aber auch erst ein wirkliches "Problem", als der "je weiter, umso schwieriger" Faktor mit dazukam, also verzeihts mir.
+			Der Timer ist etwa halb so lang wie der Erste, einfach um sicherzugehen, dass man ein zweites Set an Loch-Farben bekommt, bevor man fürs nix tun bestraft wird.
+			Er wird immer dann zurückgesetzt, wenn alle Löcher gerade ihre Farbe gewechselt haben.
+			Also entweder weil (offensichtlich) genau dieser Timer abgelaufen ist, oder auch, wenn nach dem Zuordnen von einem Block keine Möglichkeit mehr existiert.
+			Dann wird nämlich auch die Farbe aller Löcher so oft geändert, bis es wieder mindestens eine Möglichkeit gibt.
+			<br><br>
+			Jetzt zu dem ganzen "je weiter, umso schwieriger" Thema.
+			Erreicht der Score gewisse Punktzahlen, werden die Intervalle der Timer kleiner.
+			Möchte ich es beibehalten, dass der zweite Timer etwa halb so lang läuft wie der erste Timer, ist dieser jedoch sehr schnell bei unter 10 Sekunden.
+			Dadurch kommt es viel häufiger vor, dass man genau in dem Moment einen Block zuordnen will, in dem der zweite Timer abläuft, also die Löcher ihre Farben wechseln.
+			Ist das jetzt wirklich ein Problem?
+			Nö!
+			Also, vielleicht ist die Tatsache, dass der zweite Timer nicht angezeigt wird nicht optimal, aber ich glaube, dann wärs auch wieder zu einfach.
+			So muss man halt selber drauf achten, wann die Löcher wieder ihre Farbe wechseln könnten.
+			Man muss tatsächlich DENKEN!
+			<br><br>
+			Das sollte jetzt aber auch reichen an Schwierigkeit.
+			Muss ja nicht übertreiben.
+			Das war eh schon viel zu viel Text auf ein Mal.
+
+			<h2>Künstlerische Höchstleistung, die Zweite</h2>
+
+			Ich glaube, es ist an der Zeit, das Ganze grafisch mal ein bisschen aufzuwerten.
+			Zuerst gabs ein paar UI-Elemente für das Pause-Panel (damit ist hier auch offiziell erwähnt, dass man das Spiel pausieren kann) und den Game-Over Screen.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image5.png" alt="Pause-Panel" class="Normal">
+				<img src="games/shapes2sort/Image6.png" alt="Game-Over Screen" class="Normal">
+			</div>
+
+			Danach brauchte ich noch ein Logo für das Hauptmenü.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image7.png" alt="Logo" class="Normal">
+			</div>
+
+			Vielleicht sollte ich auch endlich mal den Hintergrund austauschen und eine andere Schriftart verwenden.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image8.png" alt="Hauptmenü" class="Normal">
+				<img src="games/shapes2sort/Image9.png" alt="Leben Verloren" class="Normal">
+				<img src="games/shapes2sort/Image10.png" alt="Schwierigkeit Steigt" class="Normal">
+				<img src="games/shapes2sort/Image11.png" alt="Pausiert" class="Normal">
+				<img src="games/shapes2sort/Image12.png" alt="Game-Over" class="Normal">
+			</div>
+
+			Oh ja, das sieht doch wirklich deutlich besser aus!
+
+			<h2>Das will doch wirklich keiner hören</h2>
+
+			Bis jetzt dachte ich, Grafiken wären der schlimmste Teil.
+			Wie falsch ich doch lag.
+			Theoretisch gibt es ja Leute, die gerne Ton hätten, wenn sie ein Spiel spielen.
+			Wärs n Spiel für PC hät ich gesagt ok, aber am Handy nutzt das doch eh keiner, oder?
+			Na das kann ja was werden ...
+			<br>
+			Hintergrundmusik ignorier ich einfach mal.
+			Keine Ahnung, ob ich die irgendwann einfügen werde, aber jetzt erstmal nicht.
+			Ein paar Soundeffekte sollten aber machbar sein.
+			Zuerst die zwei wichtigen Sachen: Punkt erhalten und Leben verloren.
+			Den Counter fürs nix tun könnt auch ein bisschen Ton vertragen.
+			Und vielleicht gibts auch noch nen Soundeffekt für das ansteigen der Schwierigkeit.
+			<br>
+			So, das reicht dann aber auch wieder.
+			Da red ich nie wieder drüber.
+			Einfach so tun, als würde dieser Abschnitt nicht existieren.
+
+			<h2>Bin ich etwa ... fertig?</h2>
+
+			Also ich denke, ich bin fertig.
+			YUHU!!!
+			Und jetzt?
+			Zeit, das man das Spiel auch spielen kann.
+			Es hat zwar ein paar Nerven gekostet, aber jetzt ist das Spiel im Galaxy Store verfügbar.
+			Warum dort?
+			Weil man dafür nix zahlen musste.
+			<br><br>
+			Nun, es sind 2-3 Jahre später, und endlich kann man das Spiel auch im Google Play Store herunterladen.
+			Krass, wie alt das Projekt dann doch schon wieder ist.
+
+			<h2>Eigentlich ist man ja nie fertig</h2>
+
+			Es gibt fast immer irgendwas, was man an einem Spiel noch verbessern könnte.
+			Also, auch wenn ich eigentlich schon fertig bin, gibts trotzdem noch ein paar kleine Updates.
+			Das sind fürs Erste hauptsächlich Sachen, die meine Freunde beim Testen angemerkt haben.
+			Vielleicht gibts ja in Zukunft auch noch andere Updates.
+			Mal kucken.
+
+			<h3>Version 1.0.1</h3>
+
+			Scheinbar hab ich bei der Entwicklung ein bisschen übersehen, dass Handys und Tablets in verschiedensten Seitenformaten existieren.
+			Das war zum einen ein Problem im UI, aber vor allem für den Hintergrund.
+			Also erstmal einen breiteren Hintergrund erstellen, dass dieser auch auf Tablets den ganzen Bildschirm bedeckt.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image13.png" alt="Hintergrund Problem" class="Normal">
+			</div>
+
+			Als nächstes das UI so bearbeiten, dass es sich leichter an verschiedene Bildschirmgrößen anpasst.
+			Dabei hab ich auch die Score-Anzeige, bei der bisher immer das Wort "Score" vor den Punkten stand, so bearbeitet, dass dort nur noch die Zahl zu sehen ist.
+			Dadurch gibt es, gerade auf schmaleren Geräten wie Handys, keine Überlappungen mehr.
+			Eigentlich schade, aber man konnte Handys ja nicht im 16:9 Format belassen ...
+
+			<h3>Version 1.0.2</h3>
+
+			In dem Update gab es 2 kleine Änderungen, die von meinen Freunden angemerkt wurden.
+			Zum einen, sollte der aktuell ausgewählte Block markiert sein.
+			Eigentlich sinnvoll.
+			Dann sieht mans auch, sollte man versehentlich einen Block angeklickt haben.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image14.png" alt="Block Markierung" class="Normal">
+			</div>
+
+			Die nächste Änderung bezieht sich auf den Pause-Screen.
+			Da man durch das Panel hindurch noch das Spielfeld sieht, konnte man sich dadurch mehr Zeit verschaffen, einen passenden Block zu finden.
+			Nicht ganz so sinnvoll.
+			Also: einfach während der Pause alle Blöcke schwärzen.
+			Nur mit der Form kann man schließlich nicht viel anfangen.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image15.png" alt="Blöcke Unkenntlich" class="Normal">
+			</div>
+
+			<h3>Version 1.0.3</h3>
+
+			Auf Android Handys gibt es ja diese schöne Zurück-Taste.
+			Wieso hat die bisher eigentlich keine Funktion?
+			Zeit, das zu ändern.
+			<br>
+			Außerdem wieder ein paar Kleinigkeiten am UI anpassen und noch ein letztes Feedback von meinen Freunden einbauen.
+			Die Schriftzüge für "Leben verloren" und "Schwierigkeit steigt" sind zu ähnlich.
+			Also einen einfach in einer anderen Farbe anzeigen.
+			Was Positives, wie mehr Schwierigkeit, sollte eh nicht in Rot angezeigt werden.
+
+			<div class="Image">
+				<img src="games/shapes2sort/Image16.png" alt="Schriftzug Farbe" class="Normal">
+			</div>
+
+			<h2>Das Ende</h2>
+			Herzlichen Glückwunsch!
+			Du hast das Ende dieser Seite erreicht!
+			Mehr gibts über dieses Projekt aktuell nicht zu sagen.
+			Vielleicht irgendwann in der Zukunft.
+			Wer weiß das schon?
+			<br>
+			Aber hast du das jetzt wirklich alles gelesen?
+			Wenn ja, Respekt!
+		</article>
+    </main>
+
+    <footer>
+        <a href="datenschutz">Datenschutz</a>
+
+        <a href="https://www.instagram.com/soccergrlstudios?igsh=MWR5Mmkzd2hibWRibg==" class="SocialMedia">Instagram</a>
+    </footer>
+
+    <script>
+        document.getElementById("buttonOpen").style.height = document.getElementById("homepage").offsetHeight + "px";
+
+        window.addEventListener("resize", checkHeight);
+		setStartHeight();
+    </script>
+</body>
+</html>
